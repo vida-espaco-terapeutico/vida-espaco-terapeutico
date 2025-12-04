@@ -1984,20 +1984,20 @@
             */
             
             // URL do Google Apps Script (substituir pela URL real após criar)
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwKoWuDyZyFv6ry1pWY8zm_7PHeV_TMkMJatlZGBD6twLq3g__g2lIBrQG7hk0Ys8mGkA/exec';
-            
-            // Se a URL ainda não foi configurada, simula sucesso para teste
-            if (scriptURL === 'https://script.google.com/macros/s/AKfycbwKoWuDyZyFv6ry1pWY8zm_7PHeV_TMkMJatlZGBD6twLq3g__g2lIBrQG7hk0Ys8mGkA/exec') {
-                // Simulação para teste
-                setTimeout(() => {
-                    showSuccess();
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar';
-                }, 1500);
-                
-                console.log('Dados do formulário (modo teste):', formData);
-                return;
-            }
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwKoWuDyZyFv6ry1pWY8zm_7PHeV_TMkMJatlZGBD6twLq3g__g2lIBrQG7hk0Ys8mGkA/exec';
+
+// Se a URL ainda não foi configurada, simula sucesso para teste
+if (scriptURL === '') {
+    // Simulação para teste
+    setTimeout(() => {
+        showSuccess();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar';
+    }, 1500);
+    console.log('Dados do formulário (modo teste):', formData);
+    return;
+}
+
             
             // Envio real para Google Sheets
             fetch(scriptURL, {
