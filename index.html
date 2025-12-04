@@ -1999,17 +1999,18 @@ if (scriptURL === '') {
 }
 
             
-            // Envio real para Google Sheets
+          // Envio real para Google Sheets
             fetch(scriptURL, {
                 method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
                 body: JSON.stringify(formData)
             })
-            .then(() => {
-                showSuccess();
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    showSuccess();
+                } else {
+                    alert('Erro ao enviar. Tente novamente.');
+                }
             })
             .catch(error => {
                 console.error('Erro:', error);
