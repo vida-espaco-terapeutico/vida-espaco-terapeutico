@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIDA Espaço Terapêutico | Consultórios para Terapeutas em Salvador</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Antic+Didone&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ===== RESET E VARIÁVEIS ===== */
@@ -17,37 +15,45 @@
         }
 
         :root {
-            --primary-color: #2D5A4A;
-            --primary-light: #3D7A64;
-            --primary-dark: #1D3A32;
-            --secondary-color: #D4A574;
-            --secondary-light: #E8C9A8;
-            --accent-color: #8B9D83;
-            --text-dark: #2C3E50;
-            --text-light: #6B7B8A;
-            --bg-light: #F9F7F4;
-            --bg-cream: #FDF8F3;
-            --white: #FFFFFF;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
-            --transition: all 0.3s ease;
-        }
+    /* Paleta Vida Espaço Terapêutico */
+    --primary-color: #134457;      /* Azul Institucional */
+    --primary-light: #1a5a73;
+    --primary-dark: #0d2f3d;
+    --secondary-color: #C8A445;    /* Dourado */
+    --secondary-light: #d4b55a;
+    --accent-color: #DBC8A7;       /* Bege Neutro */
+    --text-dark: #134457;
+    --text-light: #5a6b7a;
+    --bg-light: #E9E9E9;           /* Cinza Claro */
+    --bg-cream: #DBC8A7;           /* Bege Neutro */
+    --white: #FFFFFF;
+    --shadow: 0 4px 20px rgba(19, 68, 87, 0.1);
+    --shadow-hover: 0 8px 30px rgba(19, 68, 87, 0.15);
+    --transition: all 0.3s ease;
+}
 
         html {
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: var(--bg-light);
-        }
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+}
 
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-        }
+h1, h2, h3, h4 {
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+}
+
+/* CTAs e Botões */
+.btn, button {
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
         /* ===== HEADER / NAVEGAÇÃO ===== */
         header {
