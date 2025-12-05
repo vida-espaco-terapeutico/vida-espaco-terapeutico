@@ -77,16 +77,21 @@ h1, h2, h3, h4 {
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
-        .logo span {
-            color: var(--secondary-color);
-        }
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 42px;
+    }
+}
 
         nav ul {
             display: flex;
@@ -1256,7 +1261,7 @@ h1, h2, h3, h4 {
     <!-- HEADER -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo">VIDA <span>Espaço Terapêutico</span></a>
+            <a href="#" class="logo"><img src="ativos/LOG_Dione_EspacoVida__(PNG)_ (1).png" alt="VIDA Espaço Terapêutico"></a>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
